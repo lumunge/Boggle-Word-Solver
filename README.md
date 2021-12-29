@@ -9,17 +9,18 @@ to come up with words from a given input combination of characters.
 
 ## Files.
 ### board.cpp
-- Collection of 16 characters from the user
+- Collection of 16 characters from the user as input.
 
 ### utils.cpp
 - A collection of utility functions which trim and convert the words from the *freq-word.txt* dictoinary to uppercase for easier implementation.
 
 ### trie.cpp
-- An implementation of the Trie data structure with *insert* and *search* functions.
+- An implementation of the Trie data structure with *insert* and *search* which will provide efficient lookups.
 - We also build the trie from the *freq-word.txt* dictionary using the buildTrie() function.
 
 ### solver.cpp
-- This is a depth first search graph traversal algorithm which we use to traverse the tree until a word is found after which we output the word.
+- This is a depth first search graph traversal algorithm with backtracking and recursion whereby we traverse a node until there are no more matching characters and backtrack
+until we find a matching and output the formed word.
 
 ### main.cpp
 - This file ties all the above functions together and runs the whole solver.
