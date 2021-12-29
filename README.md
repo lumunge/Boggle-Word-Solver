@@ -24,3 +24,6 @@ until we find a matching and output the formed word.
 
 ### main.cpp
 - This file ties all the above functions together and runs the whole solver.
+
+## Execution
+- ```g++ -o gSolver main.cpp && ./gSolver```
